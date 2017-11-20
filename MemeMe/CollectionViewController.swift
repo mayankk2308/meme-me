@@ -8,7 +8,7 @@ class CollectionViewController: UICollectionViewController {//manages the collec
         let appdelegate=UIApplication.shared.delegate as! AppDelegate
         memeData=appdelegate.memes//saving stored memes into accessible variable
         navigationController?.navigationBar.barStyle=UIBarStyle.black//changing navigation bar style to black
-        navigationController?.navigationBar.titleTextAttributes=[NSFontAttributeName:UIFont(name: "AvenirNext-Regular", size: 18)!]//adding title text attributes
+        navigationController?.navigationBar.titleTextAttributes=[NSAttributedStringKey.font:UIFont(name: "AvenirNext-Regular", size: 18)!]//adding title text attributes
         collectionView?.reloadData()
     }
     

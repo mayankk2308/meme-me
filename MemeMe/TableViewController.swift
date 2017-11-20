@@ -10,7 +10,7 @@ class TableViewController: UITableViewController {//manages the table view of th
     }
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.barStyle=UIBarStyle.black//set navigation bar style to black
-        navigationController?.navigationBar.titleTextAttributes=[NSFontAttributeName:UIFont(name: "AvenirNext-Regular", size: 18)!]//set navigation bar text attributes
+        navigationController?.navigationBar.titleTextAttributes=[NSAttributedStringKey.font:UIFont(name: "AvenirNext-Regular", size: 18)!]//set navigation bar text attributes
         tabBarController?.tabBar.barStyle=UIBarStyle.black//set tab bar style to black
         tabBarController?.tabBar.tintColor=UIColor.orange//set selected tab item color
         noMemes.textColor=UIColor.white//set code: noMemes label text color
